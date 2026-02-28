@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon Construction</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000; /* full black landing page */
+      color: #fff;
+    }
+    header {
+      background: #2a4d9a; /* royal blue */
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { color: #f2c200; }
+    .hero {
+      background: #000;
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .hero-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .hero-content {
+      position: absolute;
+      bottom: 60px; /* places buttons near bottom of landing page */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 64px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin: 20px 0 40px 0;
+      font-family: 'Arial Black', sans-serif;
+    }
+    .btn {
+      background: #2a4d9a; /* royal blue */
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 10px;
+      display: inline-block;
+      font-size: 18px;
+    }
+    .btn:hover { background: #1f3970; }
+    section { padding: 50px 20px; max-width: 1100px; margin: auto; color: #222; background: #e6f0ff; }
+    h2 { text-align: center; margin-bottom: 30px; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,.08);
+      border-top: 4px solid #2a4d9a;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery div {
+      background: #cce0ff;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      border-radius: 6px;
+    }
+    .reviews .card { border-top: 4px solid #2a4d9a; }
+    footer {
+      background: #2a4d9a;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    footer a { color: #f2c200; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Projects</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  
+  <div class="hero-content">
+    <a class="btn" href="mailto:moonconstructionbuild@gmail.com?subject=Request%20a%20Quote">Request a Quote</a>
+    <a class="btn" href="tel:19127557199">Call Now</a>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Commercial & Residential</div>
+    <div class="card">Carpentry</div>
+    <div class="card">Drywall</div>
+    <div class="card">Painting</div>
+    <div class="card">Decks & Docks</div>
+    <div class="card">Porches & Fencing</div>
+    <div class="card">Tile & Flooring</div>
+    <div class="card">Roofing</div>
+    <div class="card">Bathrooms</div>
+    <div class="card">Molding</div>
+    <div class="card">Pressure Washing</div>
+    <div class="card">Pergolas & More</div>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Previous Jobs</h2>
+  <div class="gallery">
+    <div>Add Job Photo</div>
+    <div>Add Job Photo</div>
+    <div>Add Job Photo</div>
+    <div>Add Job Photo</div>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+  <h2>Customer Reviews</h2>
+  <div class="services">
+    <div class="card"><strong>James R. – Savannah, GA</strong><br><br>"Moon Construction completely remodeled our porch and added new fencing around our property. The crew showed up on time every day, worked professionally, and the final result exceeded our expectations. We’ve already recommended them to neighbors." ⭐⭐⭐⭐⭐</div>
+    <div class="card"><strong>Maria L. – Pooler, GA</strong><br><br>"We hired Moon Construction for drywall repair and interior painting after storm damage. Communication was excellent and the quality of work was outstanding. Everything was finished clean and on schedule." ⭐⭐⭐⭐⭐</div>
+    <div class="card"><strong>David K. – Richmond Hill, GA</strong><br><br>"They built our deck and pergola and it turned out better than we imagined. Very skilled craftsmanship and fair pricing. We will definitely use Moon Construction again for future projects." ⭐⭐⭐⭐⭐</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">
+    📞 <a href="tel:19127557199">912-755-7199</a><br><br>
+    📧 <a href="mailto:moonconstructionbuild@gmail.com">moonconstructionbuild@gmail.com</a><br><br>
+    🌐 <a href="https://share.google/yoScty9P9t2fItGGI" target="_blank">Google Business Page</a><br><br>
+    ⭐ <a href="https://www.yelp.com/biz/moon-construction-savannah?uid=UtUOJrhPgDrfhgsNsEjqjQ&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)" target="_blank">Yelp Page</a>
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Moon Construction | Built with Quality & Pride</p>
+</footer>
+
+</body>
+</html>
